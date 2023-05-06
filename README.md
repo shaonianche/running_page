@@ -101,8 +101,8 @@ git clone https://github.com/yihong0618/running_page.git --depth=1
 
 ```
 pip3 install -r requirements.txt
-yarn install
-yarn develop
+pnpm install
+pnpm develop
 ```
 
 Open your browser and visit <http://localhost:8000/>
