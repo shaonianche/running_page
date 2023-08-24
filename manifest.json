@@ -1,0 +1,176 @@
+{
+  "assets/end.svg": {
+    "file": "assets/end-a91503f9.svg",
+    "src": "assets/end.svg"
+  },
+  "assets/github.svg": {
+    "file": "assets/github-b006306d.svg",
+    "src": "assets/github.svg"
+  },
+  "assets/grid.svg": {
+    "file": "assets/grid-4089f1c3.svg",
+    "src": "assets/grid.svg"
+  },
+  "assets/start.svg": {
+    "file": "assets/start-2a9d06f3.svg",
+    "src": "assets/start.svg"
+  },
+  "assets/year_2012.svg": {
+    "assets": [
+      "assets/year_2012-a096ccf9.svg"
+    ],
+    "file": "assets/year_2012-01706c50.js",
+    "imports": [
+      "index.html"
+    ],
+    "isDynamicEntry": true,
+    "src": "assets/year_2012.svg"
+  },
+  "assets/year_2013.svg": {
+    "assets": [
+      "assets/year_2013-7e38c907.svg"
+    ],
+    "file": "assets/year_2013-68d9e9e0.js",
+    "imports": [
+      "index.html"
+    ],
+    "isDynamicEntry": true,
+    "src": "assets/year_2013.svg"
+  },
+  "assets/year_2014.svg": {
+    "assets": [
+      "assets/year_2014-0989ebca.svg"
+    ],
+    "file": "assets/year_2014-ef037466.js",
+    "imports": [
+      "index.html"
+    ],
+    "isDynamicEntry": true,
+    "src": "assets/year_2014.svg"
+  },
+  "assets/year_2015.svg": {
+    "assets": [
+      "assets/year_2015-37392634.svg"
+    ],
+    "file": "assets/year_2015-a22eb674.js",
+    "imports": [
+      "index.html"
+    ],
+    "isDynamicEntry": true,
+    "src": "assets/year_2015.svg"
+  },
+  "assets/year_2016.svg": {
+    "assets": [
+      "assets/year_2016-994e76d4.svg"
+    ],
+    "file": "assets/year_2016-370145ef.js",
+    "imports": [
+      "index.html"
+    ],
+    "isDynamicEntry": true,
+    "src": "assets/year_2016.svg"
+  },
+  "assets/year_2017.svg": {
+    "assets": [
+      "assets/year_2017-6f8d3cf1.svg"
+    ],
+    "file": "assets/year_2017-bdcd9d30.js",
+    "imports": [
+      "index.html"
+    ],
+    "isDynamicEntry": true,
+    "src": "assets/year_2017.svg"
+  },
+  "assets/year_2018.svg": {
+    "assets": [
+      "assets/year_2018-1170f4d3.svg"
+    ],
+    "file": "assets/year_2018-e984660a.js",
+    "imports": [
+      "index.html"
+    ],
+    "isDynamicEntry": true,
+    "src": "assets/year_2018.svg"
+  },
+  "assets/year_2019.svg": {
+    "assets": [
+      "assets/year_2019-711e45c8.svg"
+    ],
+    "file": "assets/year_2019-91801151.js",
+    "imports": [
+      "index.html"
+    ],
+    "isDynamicEntry": true,
+    "src": "assets/year_2019.svg"
+  },
+  "assets/year_2020.svg": {
+    "assets": [
+      "assets/year_2020-a868b70d.svg"
+    ],
+    "file": "assets/year_2020-1bae08a3.js",
+    "imports": [
+      "index.html"
+    ],
+    "isDynamicEntry": true,
+    "src": "assets/year_2020.svg"
+  },
+  "assets/year_2021.svg": {
+    "assets": [
+      "assets/year_2021-5f7eb502.svg"
+    ],
+    "file": "assets/year_2021-6dee4a90.js",
+    "imports": [
+      "index.html"
+    ],
+    "isDynamicEntry": true,
+    "src": "assets/year_2021.svg"
+  },
+  "assets/year_2022.svg": {
+    "assets": [
+      "assets/year_2022-cdeb5fe8.svg"
+    ],
+    "file": "assets/year_2022-0bfc000c.js",
+    "imports": [
+      "index.html"
+    ],
+    "isDynamicEntry": true,
+    "src": "assets/year_2022.svg"
+  },
+  "assets/year_2023.svg": {
+    "assets": [
+      "assets/year_2023-2c0edf2c.svg"
+    ],
+    "file": "assets/year_2023-60cc00c0.js",
+    "imports": [
+      "index.html"
+    ],
+    "isDynamicEntry": true,
+    "src": "assets/year_2023.svg"
+  },
+  "index.css": {
+    "file": "assets/index-aaff0bbe.css",
+    "src": "index.css"
+  },
+  "index.html": {
+    "css": [
+      "assets/index-aaff0bbe.css"
+    ],
+    "dynamicImports": [
+      "assets/year_2012.svg",
+      "assets/year_2013.svg",
+      "assets/year_2014.svg",
+      "assets/year_2015.svg",
+      "assets/year_2016.svg",
+      "assets/year_2017.svg",
+      "assets/year_2018.svg",
+      "assets/year_2019.svg",
+      "assets/year_2020.svg",
+      "assets/year_2021.svg",
+      "assets/year_2022.svg",
+      "assets/year_2023.svg"
+    ],
+    "file": "assets/index-0a81071d.js",
+    "isEntry": true,
+    "src": "index.html"
+  }
+}
