@@ -63,6 +63,6 @@ WORKDIR /root/running_page
 COPY --from=data /root/running_page /root/running_page
 RUN yarn run build
 
-FROM nginx:alpine AS web
+FROM nginx:1.27.2-alpine3.20 AS web
 COPY --from=frontend-build /root/running_page/dist /usr/share/nginx/html/
 COPY --from=frontend-build /root/running_page/assets /usr/share/nginx/html/assets
