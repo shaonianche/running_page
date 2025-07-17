@@ -640,6 +640,24 @@ python run_page/nike_sync.py eyJhbGciThiMTItNGIw******
    python run_page/strava_sync.py ${client_id} ${client_secret} ${refresh_token}
    ```
 
+   The default is to synchronize only the run data, if you want to synchronize all data add the parameter `--only-run 1` or `--only-run false` or `--only-run f`.
+
+   ```bash
+   python run_page/strava_sync.py ${client_id} ${client_secret} ${refresh_token} --only-run 1
+   ```
+
+   After the first synchronization, subsequent synchronizations will use incremental synchronization by default (only synchronize data after the date it already exists), if you find that the synchronized data is incorrect, use the `--force` parameter to trigger a full synchronization.
+
+   ```bash
+   python run_page/strava_sync.py ${client_id} ${client_secret} ${refresh_token} --force
+   ```
+
+   Show all parameters available parameters `--help`
+
+   ```bash
+   python run_page/strava_sync.py --help
+   ```
+
    References：
 
    - <https://developers.strava.com/docs/getting-started>

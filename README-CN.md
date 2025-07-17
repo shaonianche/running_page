@@ -829,15 +829,30 @@ python run_page/nike_sync.py eyJhbGciThiMTItNGIw******
 6. 同步数据至 Strava
    在项目根目录执行：
 
-   > 第一次同步 Strava 数据时需要更改在 strava_sync.py 中的第 12 行代码 False 改为 True，运行完成后，再改为 False。
-
-   仅同步跑步数据，添加参数 --only-run
-
    ```bash
    python run_page/strava_sync.py ${client_id} ${client_secret} ${refresh_token}
    ```
 
-   其他资料参见
+   默认为仅同步跑步数据，如果想要同步所有数据则添加参数`--only-run 1` 或 `--only-run false` 或 `--only-run f`
+
+   ```bash
+   python run_page/strava_sync.py ${client_id} ${client_secret} ${refresh_token} --only-run 1
+   ```
+
+   首次同步数据后，后续默认使用增量同步（仅同步已存在日期之后的数据），如果发现同步的数据有误，使用 `--force` 参数触发全量同步
+
+   ```bash
+   python run_page/strava_sync.py ${client_id} ${client_secret} ${refresh_token} --force
+   ```
+
+   查看所有参数可用参数 `--help`
+
+   ```bash
+   python run_page/strava_sync.py --help
+   ```
+
+   其他资料参见：
+
    <https://developers.strava.com/docs/getting-started>
    <https://github.com/barrald/strava-uploader>
    <https://github.com/strava/go.strava>

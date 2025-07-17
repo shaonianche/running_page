@@ -30,18 +30,16 @@ from tzlocal import get_localzone
 from utils import adjust_time_to_utc, adjust_timestamp_to_utc, to_date
 
 # struct body
-FitType = np.dtype(
-    {
-        "names": [
-            "time",
-            "bpm",
-            "lati",
-            "longi",
-            "elevation",
-        ],  # unix timestamp, heart bpm, LatitudeDegrees, LongitudeDegrees, elevation
-        "formats": ["i", "S4", "S32", "S32", "S8"],
-    }
-)
+FitType = np.dtype({
+    "names": [
+        "time",
+        "bpm",
+        "lati",
+        "longi",
+        "elevation",
+    ],  # unix timestamp, heart bpm, LatitudeDegrees, LongitudeDegrees, elevation
+    "formats": ["i", "S4", "S32", "S32", "S8"],
+})
 
 # device info
 user_agent = "CodoonSport(8.9.0 1170;Android 7;Sony XZ1)"
