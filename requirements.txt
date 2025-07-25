@@ -30,3 +30,4 @@ pycryptodome
 duckdb
 openai==1.88.0
 cairosvg
+urllib3>=2.5.0 # not directly required, pinned by Snyk to avoid a vulnerability
