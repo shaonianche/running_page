@@ -5,22 +5,19 @@ from config import JSON_FILE, SQL_FILE
 from generator import Generator
 
 
-# for only run type, we use the same logic as garmin_sync
 def run_strava_sync(
     client_id,
     client_secret,
     refresh_token,
-    sync_types: list = ["running"],
     only_run=False,
+    force=False,
 ):
     generator = Generator(SQL_FILE)
     generator.set_strava_config(client_id, client_secret, refresh_token)
-    # judge sync types is only running or not
-    if not only_run and len(sync_types) == 1 and sync_types[0] == "running":
-        only_run = True
-    # if you want to refresh data change False to True
+
     generator.only_run = only_run
-    generator.sync(False)
+
+    generator.sync(force)
 
     activities_list = generator.load()
     with open(JSON_FILE, "w") as f:
@@ -38,10 +35,17 @@ if __name__ == "__main__":
         action="store_true",
         help="if is only for running",
     )
+    parser.add_argument(
+        "--force",
+        dest="force",
+        action="store_true",
+        help="force full sync of all data instead of incremental sync",
+    )
     options = parser.parse_args()
     run_strava_sync(
         options.client_id,
         options.client_secret,
         options.refresh_token,
         only_run=options.only_run,
+        force=options.force,
     )
